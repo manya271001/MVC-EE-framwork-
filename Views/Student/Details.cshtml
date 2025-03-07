@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Student Details";
+}
+
+@model WebApplication2.Models.Student
+
+<div class="row m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h1>@Model?.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <h4>Student ID : @Model?.StudentId</h4>
+                <h4>Branch : @Model?.Branch</h4>
+                <h4>Section : @Model?.Section</h4>
+                <h4>Gender : @Model?.Gender</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-action="Index" asp-controller="Home" class="btn btn-primary">
+                    Back
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
